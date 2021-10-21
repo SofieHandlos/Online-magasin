@@ -1,0 +1,211 @@
+/* Basic CSS reset */
+*,
+:after,
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* CSS starter her */
+.wrapper{
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 900px;
+}
+
+/* Tema styling */
+.theme_page{
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    background-color: #eaf5e1;
+}
+
+.theme_element_backgroundcolor{
+    background-color: #4E8A32;
+}
+
+/* Styling af navbar */
+.container{
+    width: 100%;
+    text-align: center;
+    height: 75px;
+    background: #FFF;
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  
+  ul{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    list-style: none;
+    transition: all 0.5s ease;
+  }
+  
+  ul li{
+    width: 10%;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding: 24px 15px;
+    cursor: pointer;
+    color: #4E8A32;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    position: relative;
+  }
+  
+/* Hover effekt på menupunkter */
+  .container ul li:hover{
+    color: #4E8A32;
+    box-shadow: inset 0 5px #4E8A32;
+  }
+  
+/* Styling af underpunkter */
+.sub_nav{
+    position: absolute;
+    top: 56px;
+    left: -15px;
+    width: 100%;
+    height: 310px;
+    background: #fff;
+    border-top: 1px solid #FFF;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 10px;
+  }
+
+/* Hover effekt på underpunkter */
+.sub_nav li{
+    color: #4E8A32;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px 0px;
+  }
+  
+  .container ul li ul.sub_nav li:hover{
+    color: #4E8A32;
+    box-shadow: 0 0;
+  }
+  
+  .container ul li:hover ul.sub_nav{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  a:visited{
+    color: #4E8A32;
+  }
+  
+ /* Styling af logo */
+.logo{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+  }
+
+/* Vindmøllebanner */
+.windmill_picture{
+    width: 100%;  
+}
+  
+/* Styling af welcome tekstboks */
+.welcome{ 
+    width: 60%;
+    height: 3.5rem;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 16px;
+    border-radius: 5px;
+}
+
+.welcome_textbox{
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* På mobile enheder */
+@media only screen and (max-width:50rem){
+  .welcome{
+    font-size: 18px;
+  }
+}
+
+/* Styling af SoMe tekstboks */
+.somebox{
+    margin: 25px auto 40px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.somebox_text{
+    text-align: right;
+}
+
+/* Styling af midtersektion */
+.midsection{
+    max-width: 100%;
+    margin: 40px;
+}
+
+.flexbox_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.flexbox_items{
+  max-width: 600px;
+  padding: 25px;
+}
+
+.section_pictures{
+    height: 16rem;
+    width: 25rem;
+    border-radius: 10px;
+}
+
+/* Page footer */
+.some_image{
+  width: 32px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.page_footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 12rem;
+  background-color: #4E8A32;
+  clear: left;
+  position: sticky;
+  border-radius: 5px;
+}
+
+/* På mobile enheder */
+@media only screen and (min-width:37.5rem){
+
+  .page_footer{
+      flex-direction: row;
+      height: 12rem;
+  }
+
+  .page_footer_section{
+      height: 4rem;
+  }
+}
+
+

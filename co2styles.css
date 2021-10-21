@@ -1,0 +1,190 @@
+/* Basic CSS reset */
+*
+:after,
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* CSS starter her */
+.wrapper{
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 900px;
+}
+
+/* Tema styling */
+.theme_page{
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    background-color: #eaf5e1;
+}
+
+/* Styling af navbar */
+.container{
+    width: 100%;
+    text-align: center;
+    height: 75px;
+    background: #FFF;
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  
+  ul{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    list-style: none;
+    transition: all 0.5s ease;
+  }
+  
+  ul li{
+    width: 10%;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding: 24px 15px;
+    cursor: pointer;
+    color: #4E8A32;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    position: relative;
+  }
+  
+/* Hover effekt på menupunkter */
+  .container ul li:hover{
+    color: #4E8A32;
+    box-shadow: inset 0 5px #4E8A32;
+  }
+  
+/* Styling af underpunkter */
+.sub_nav{
+    position: absolute;
+    top: 56px;
+    left: -15px;
+    width: 100%;
+    height: 310px;
+    background: #fff;
+    border-top: 1px solid #FFF;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 10px;
+  }
+
+/* Hover effekt på underpunkter */
+.sub_nav li{
+    color: #4E8A32;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px 0px;
+  }
+  
+  .container ul li ul.sub_nav li:hover{
+    color: #4E8A32;
+    box-shadow: 0 0;
+  }
+  
+  .container ul li:hover ul.sub_nav{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .frontpage_button{
+    font-family: 'Courier New', Courier, monospace;
+    color: #4E8A32;
+    list-style: none;
+    font-size: small;
+  }
+
+  a:visited{
+    color: #4E8A32;
+  }
+
+ /* Styling af logo */
+.logo{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+  }
+
+/* Styling af main */
+ .equal-height-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* Styling af første container */
+.first{
+  flex: 2;
+  padding: 50px; 
+}
+
+.co2video{
+  max-width: 600px;
+  border-radius: 8px;
+  margin: 40px;
+}
+
+/* Styling af anden container */
+.second{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+/* På mobile enheder */
+@media only screen and (max-width:50rem){
+
+  .equal-height-container{
+      flex-direction: column;
+  }  
+
+  .co2video{
+    max-width: 400px;
+  }
+}
+ 
+/* Page footer */
+.some_image{
+  width: 32px;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.page_footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 12rem;
+  background-color: #4E8A32;
+  clear: left;
+  position: sticky;
+  border-radius: 5px;
+}
+
+/* På mobile enheder */
+@media only screen and (min-width:37.5rem){
+
+  .page_footer{
+      flex-direction: row;
+      height: 12rem;
+  }
+
+  .page_footer_section{
+      height: 4rem;
+  }
+}
+
+
+
